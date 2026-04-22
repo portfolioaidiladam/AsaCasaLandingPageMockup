@@ -709,6 +709,39 @@ section { padding: 120px 48px; }
     color: var(--ink-mute);
     margin-top: 8px;
 }
+.sub-ratings {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 48px auto 0;
+    max-width: 900px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.sub-rating {
+    background: var(--bg);
+    padding: 22px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+.sub-rating-value {
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1;
+}
+.sub-rating-label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+}
 .reviews-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -815,6 +848,7 @@ footer {
     .pricing-grid { grid-template-columns: 1fr; gap: 32px; }
     .location-grid { grid-template-columns: 1fr; }
     .reviews-grid { grid-template-columns: 1fr; }
+    .sub-ratings { grid-template-columns: repeat(3, 1fr); }
     .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
     .form-row { grid-template-columns: 1fr; }
 }
